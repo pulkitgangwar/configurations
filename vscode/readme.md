@@ -1,0 +1,61 @@
+```json
+{
+  "vim.hlsearch": true,
+  "vim.highlightedyank.enable": true,
+  "vim.leader": "<space>",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["leader", "t"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+    {
+      "before": ["leader", "w"],
+      "commands": ["workbench.action.files.save"]
+    },
+    {
+      "before": ["<Leader>", "t", "t"],
+      "commands": [":tabnew"]
+    },
+    {
+      "before": ["<Leader>", "n"],
+      "commands": [":tabnext"]
+    },
+    {
+      "before": ["<Leader>", "p"],
+      "commands": [":tabprev"]
+    },
+    {
+      "before": ["<Leader>", "t", "o"],
+      "commands": [":tabo"]
+    },
+    {
+      "before": ["<Leader>", "p"],
+      "commands": ["workbench.action.showCommands"]
+    },
+    {
+      "before": ["<Leader>", "m"],
+      "commands": ["workbench.action.gotoSymbol"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    }
+  ],
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["k", "j"],
+      "after": ["<Esc>"]
+    },
+    {
+      "before": ["K", "J"],
+      "after": ["<Esc>"]
+    }
+  ]
+}
+```
